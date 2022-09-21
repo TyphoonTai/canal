@@ -81,7 +81,8 @@ public class SingleDml {
                 }
                 singleDml.setData(data);
                 if (dml.getOld() != null) {
-                    Map<String, Object> oldData = dml.getOld().get(i);
+                    //Map<String, Object> oldData = dml.getOld().get(i);
+                    Map<String, Object> oldData = dml.getData().get(i);
                     if (caseInsensitive) {
                         oldData = toCaseInsensitiveMap(oldData);
                     }
